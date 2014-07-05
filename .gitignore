@@ -1,0 +1,6 @@
+# Ignore
+########################
+.DC_Store
+.build
+/Icon
+Icon

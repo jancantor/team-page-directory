@@ -1,0 +1,137 @@
+// ===========================================
+// Base Style
+// ===========================================
+html,body {
+  min-height:100%;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: $DarkGray;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  position: relative;
+}
+
+nav {
+  &.filters {
+    padding: 30px 0px;
+    text-align: center;
+    font-size: 13px;
+    border-bottom: 1px solid $BorderColor;
+  }
+  a {
+    color: $DarkGray;
+    text-decoration: none;
+    margin: 0 20px 0 0;
+  }
+}
+
+#Wrapper {
+  width: 100%;
+}
+
+.wrap {
+  width: 95%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+
+// ===========================================
+// Header
+// ===========================================
+#Header {
+  background: #fff;
+  padding: 50px 0;
+  @extend .clearfix;
+  h1 {
+    float: left;
+    color: #252525;
+    font-size: 20px;
+  }
+  nav {
+    float: right;
+  }
+}
+
+
+// ===========================================
+// Content
+// ===========================================
+#Content {
+}
+
+// Hero
+// ============================================
+#Hero {
+  background: $LightGray url(../images/hero-img.jpg) no-repeat 0 50%;
+  background-size: cover;
+  text-align: center;
+  padding: 16% 0;
+  h1 {
+    font-size: 72px;
+    font-weight: 300;
+    color: $Black;
+    margin: 0 0 20px;
+  }
+  .p-large {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
+
+// Teams
+// ============================================
+#Team {
+}
+
+.team-grid {
+  margin-top: 50px;
+  @extend .clearfix;
+  h2 {
+    font-size: 46px;
+    font-weight: 300;
+    color: $Black;
+    text-align: center;
+    margin: 40px 0 60px;
+  }
+  > .thumb-wrapper {
+    float: left;
+    width: 22%;
+    box-shadow: inset $BorderColor 0 0 0 1px;
+    margin: 0 0 60px 40px;
+    padding-bottom: 20px;
+    text-align: center;
+    &:nth-child(4n):nth-child(even) {
+      margin-right: 0;
+      // border: 1px solid black;
+    }
+    img {
+      width: 100%;
+    }
+    h4 {
+      font-size: 20px;
+      color: $Black;
+      margin: 20px 0 10px;
+    }
+    strong {
+      font-size: 12px;
+      color: $DarkGray;
+      line-height: 1.4;
+      text-transform: uppercase;
+    }
+  }
+}
+
+
+// ===========================================
+// Footer
+// ===========================================
+#Footer {
+  margin: 50px 0;
+  text-align: center;
+}
+
+
+

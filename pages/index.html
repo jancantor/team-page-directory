@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block content %}
+<section id="Wrapper">
+  <header id="Header">
+    <div class="wrap">
+      <h1>{% block title %}{{ block.super }}{% endblock title %}</h1>
+      <nav>
+        <a href="#">Office 1</a>
+        <a href="#">Office 2</a>
+        <a href="#">Office 3</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="Content">
+    <section id="Hero">
+      <div class="wrap">
+        <h1></h1>
+      </div>
+    </section>
+    <section id="Team">
+      <nav class="filters">
+        <div class="wrap">
+          <a href="#all">All</a>
+          <a href="#executive">Executive</a>
+          <a href="#technology">Technology</a>
+          <a href="#product">Product</a>
+          <a href="#business">Business</a>
+          <a href="#editorial">Editorial</a>
+          <a href="#finance">Finance</a>
+          <a href="#human-resources">Human Resources</a>
+        </div>
+      </nav>
+      <div id="Departments" class="wrap">
+        <ul class="team-grid">
+          <h2>New York Team</h2>
+          <li class="thumb-wrapper">
+            <img src="{% static '/images/placeholder-img.jpg' %}"/>
+            <h4>Charlie Purry</h4>
+            <strong>Product Designer</strong>
+          </li>
+          <li class="thumb-wrapper">
+            <img src="{% static '/images/placeholder-img.jpg' %}"/>
+            <h4>Charlie Purry</h4>
+            <strong>Product Designer</strong>
+          </li>
+          <li class="thumb-wrapper">
+            <img src="{% static '/images/placeholder-img.jpg' %}"/>
+            <h4>Charlie Purry</h4>
+            <strong>Product Designer</strong>
+          </li>
+          <li class="thumb-wrapper">
+            <img src="{% static '/images/placeholder-img.jpg' %}"/>
+            <h4>Charlie Purry</h4>
+            <strong>Product Designer</strong>
+          </li>
+          <li class="thumb-wrapper">
+            <img src="{% static '/images/placeholder-img.jpg' %}"/>
+            <h4>Charlie Purry</h4>
+            <strong>Product Designer</strong>
+          </li>
+          <li class="thumb-wrapper">
+            <img src="{% static '/images/placeholder-img.jpg' %}"/>
+            <h4>Charlie Purry</h4>
+            <strong>Product Designer</strong>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </section>
+  
+  {% block footer %}
+  <footer id="Footer">
+    <div class="wrap">
+      <p class="paragraph">Footer</p>
+    </div>
+  </footer>
+  {% endblock footer %}
+</section>
+{% endblock content %}
